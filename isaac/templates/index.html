@@ -1,5 +1,5 @@
 {% load static %}
-{% static "images" as BaseUrl %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,7 +135,7 @@
                                         <div class="home_title"><h2>Let us take you away</h2></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
         <!-- Destination -->
         <div class="destination item">
             <div class="destination_image">
-                <img src="{{ dest.img.url }}" alt="">
+                <img src="{{baseUrl}}/{{dest.img}}" alt="">
 
                 {% if dest.offer %}
                 <div class="spec_offer text-center"><a href="#">Special Offer</a></div>
